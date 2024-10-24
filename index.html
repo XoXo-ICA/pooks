@@ -1,0 +1,35 @@
+<body style="overflow: hidden;">
+<button onclick="changeback()">Click Here</button>
+</body>
+<hr id="love"></hr>
+<style>
+button{
+    position: fixed;
+    right: 35%;
+    top: 35%;
+    height: 300px;
+    width: 600px;
+    font-size: 100px;
+}
+hr{
+    position: fixed;
+    right: 35%;
+    top: 70%;
+    height: 100px;
+    width: 600px;
+    background-color: black;
+    color: antiquewhite;
+    font-size: 50px;
+
+    }
+</style>
+<script>
+    let image = "url('P.jpg')"
+
+    function changeback(){
+        document.body.style.backgroundImage = image
+        document.body.style.backgroundRepeat = "no-repeat"
+        document.body.style.backgroundSize = "100% 100%"
+        document.getElementById('love').innerHTML = "Will you be my pookie?"
+    }
+</script>
